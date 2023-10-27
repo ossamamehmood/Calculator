@@ -1,0 +1,119 @@
+body {
+    margin: auto;
+    padding: auto;
+    line-height: 0.5;
+    background-color: rgb(179,0,255);
+    background: linear-gradient(-90deg, rgba(179,0,255,1) 5%, rgba(231,0,255,1) 50%, rgba(255,0,254,1) 95%); 
+    background-size: 200% 100%;
+    animation: color 3s linear infinite;
+    font-family: sans-serif;
+}
+
+@keyframes color {
+    0% {
+        background-position: 100% 50%;
+    }
+    50% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.calci {
+    max-width: 110%; /* Increase the max-width to 110% */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%, -55%); /* Increase the translation values to -55% */
+}
+
+
+#zero{
+height: 55;
+width: 116;
+font-size: 20;
+font-family: sans-serif;
+font-weight: 300;
+}
+
+#display {
+    background: rgb(15, 15, 15);
+    border: none;
+    border-radius: 2rem;
+    width: 245px; /* Added "px" for width and height values */
+    font-size: 20px; /* Added "px" for font size */
+    font-family: sans-serif;
+    font-weight: 300;
+    height: 60px; /* Added "px" for height value */
+    margin: auto;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+    padding: 15px; /* Adjust the padding as needed */
+}
+
+.button{
+    width: 55;
+    height: 55;
+    font-size: 20;
+    color: rgb(255, 255, 255);
+    background: rgb(15, 15, 15);
+    font-family: sans-serif;
+    font-weight: 300;
+    border:0;
+    border-radius: 30px;
+    margin: 1.5;
+    box-shadow: 0 0 7px rgba(0,0,0,0.5);
+}
+
+.button:active {
+    transform: scale(1.1); /* Add a scaling effect when the button is pressed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Adjust box shadow for the press effect */
+}
+
+h1{
+    margin-top: 300px;
+    margin-left: 100px;
+    font-family: sans-serif;
+    font-size:50;
+    text-decoration: underline;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h2{
+
+    color: white;
+    margin-top: -1px;
+    font-family: sans-serif;
+    margin-left: 438px;
+}
+.operator{
+    width: 55;
+    height: 55;
+    font-size: 20;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border: none;
+    background: rgb(15, 15, 15);
+    font-family: sans-serif;
+    font-weight: 500;
+    border:0;
+    border-radius: 30px;
+    margin: 1.5;
+    cursor:pointer;
+    box-shadow: 0 0 7px rgba(0,0,0,0.5);
+}
+
+.operator:active {
+    transform: scale(1.1); /* Add a scaling effect when the button is pressed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Adjust box shadow for the press effect */
+}
+
+.operator:hover{
+    background-color: rgb(179,0,255);
+    background: linear-gradient(90deg, rgba(179,0,255,1) 5%, rgba(231,0,255,1) 50%, rgba(255,0,254,1) 95%);
+    box-shadow: 0 0 9px rgba(0,0,0,0.75);
+}
